@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- slidingmenu配置 -->
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="shadow_width">16dp</dimen>
+    <dimen name="layout_padding">20dp</dimen>
+</resources>

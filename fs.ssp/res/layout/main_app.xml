@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<global.DragMenu
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/dm"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:cjj="http://schemas.android.com/apk/res/topevery.um.jinan.manager"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	cjj:drag_menu_padding="50dp"
+	android:background="@drawable/titlebar_bg"
+	android:scrollbars="none">
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:orientation="horizontal">
+		<include layout="@layout/main_app_left" />
+		<include layout="@layout/main3" />
+		<View
+			android:background="@android:color/transparent"
+			android:layout_width="1dip"
+			android:layout_height="match_parent" />
+	</LinearLayout>
+</global.DragMenu>

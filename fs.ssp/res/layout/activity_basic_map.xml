@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<com.tencent.tencentmap.mapsdk.map.MapView
+		android:id="@+id/map"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+	 <com.tencent.tencentmap.streetviewsdk.StreetViewPanoramaView
+        android:id="@+id/panorama_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+	<FrameLayout
+	    android:id="@+id/layout_location"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="25dp"
+		android:layout_marginTop="10dip"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true">
+		<ImageButton
+			android:id="@+id/btnLocation"
+			android:src="@drawable/main_icon_follow"
+			android:layout_width="40dip"
+			android:layout_height="40dip"
+			android:background="@drawable/btn_location1" />
+		<ProgressBar
+		    android:visibility="invisible"
+			android:id="@+id/barLocation"
+			android:layout_gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<ImageButton
+	    android:id="@+id/btn_pano"
+			android:layout_width="40dip"
+			android:layout_height="40dip"
+			android:src="@drawable/selector_icon_street_view" 
+			android:background="@drawable/btn_location1"
+			android:layout_below="@id/layout_location"
+			android:layout_marginTop="50dp"
+			/>
+	</FrameLayout>
+	<Button
+	    android:visibility="gone"
+	    android:layout_marginLeft="10dip"
+	    android:layout_marginBottom="15dip"
+		android:text="地图版本1.0"
+		android:gravity="center"
+		android:textColor="#000000"
+		android:textSize="12sp"
+		android:background="@drawable/content_btn"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true"
+		android:layout_width="95dip"
+		android:layout_height="30dip" />
+</RelativeLayout>

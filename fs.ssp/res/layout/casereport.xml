@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/index_menu_bg">
+	<ScrollView
+		android:id="@+id/linearlayout2"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_alignParentTop="true"
+		android:layout_above="@+id/linearlayout">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:padding="10dip"
+			android:orientation="vertical">
+			<TextView
+			     android:visibility="gone"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="联 系 人"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<EditText
+			    style="@style/my_edittext"
+			    android:padding="2dip"
+			     android:visibility="gone"
+				android:id="@+id/edt_linkman"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:hint="请输入联系人"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="联系方式"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<EditText
+			    style="@style/my_edittext"
+			    android:padding="2dip"
+				android:id="@+id/edt_linkPhone"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:hint="请输入联系方式"
+				android:phoneNumber="true"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+			    android:layout_marginTop="5dip"
+			    android:layout_marginBottom="5dip"
+			   android:paddingLeft="5dip"
+			     android:paddingRight="5dip"
+			    android:id="@+id/btnMap"
+				android:layout_width="wrap_content"
+				android:layout_height="30dip"
+				android:text="案发地址"
+				android:gravity="left|center"
+				android:background="@drawable/button_selector_green"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<EditText
+			    style="@style/my_edittext"
+			    android:padding="2dip"
+				android:id="@+id/evtPos"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="top|left"
+				android:hint="请输入详细地址"
+				android:textColor="#000000"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="问题描述"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<EditText
+			    style="@style/my_edittext"
+			    android:padding="2dip"
+				android:id="@+id/evtDesc"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="top|left"
+				android:hint="请输入描述"
+				android:minLines="3"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<topevery.um.com.casereport.uritl.MyListView
+				android:layout_marginTop="5dip"
+				android:cacheColorHint="#00000000"
+				android:id="@+id/attachinfo_listview"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				/>
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout
+		android:id="@+id/linearlayout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:gravity="center"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btn_menu"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="照  相"
+			android:paddingLeft="25dip"
+			android:textColor="#FFFFFF"
+			android:textAppearance="?android:attr/textAppearanceMedium" 
+			android:background="@xml/button" />
+		<Button
+			android:id="@+id/btn_report"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@xml/button_report" 
+			android:text="上  报"
+			android:paddingLeft="25dip"
+			android:textColor="#FFFFFF"
+			android:textAppearance="?android:attr/textAppearanceMedium"  />
+	</LinearLayout>
+</RelativeLayout>

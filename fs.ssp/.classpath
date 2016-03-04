@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="libs/topevery.framework.core.jar"/>
+	<classpathentry kind="lib" path="libs/libammsdk.jar"/>
+	<classpathentry kind="lib" path="libs/topevery.android.core.jar"/>
+	<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="libs/BaiduLBS_Android.jar"/>
+	<classpathentry kind="lib" path="libs/core.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="libs/andbase.jar"/>
+	<classpathentry kind="lib" path="libs/my_commons.jar"/>
+	<classpathentry kind="lib" path="libs/nineoldandroids-2.4.0.jar"/>
+	<classpathentry kind="lib" path="libs/TencentLocationSDK_v4.1.1_r175129.jar"/>
+	<classpathentry kind="lib" path="libs/TencentMapSDK_Raster_v1.1.2.15850.jar"/>
+	<classpathentry kind="lib" path="libs/TencentPanoramaSDKv.1.1.1.jar"/>
+	<classpathentry kind="lib" path="libs/TencentSearch1.1.2.16095.jar"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

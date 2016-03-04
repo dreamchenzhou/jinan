@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <ImageButton
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/baidu_locatebtn"
+        android:onClick="myLocation"
+        android:src="@drawable/baidu_location_nav" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dip"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/inBtn"
+            android:layout_width="45dip"
+            android:layout_height="41dip"
+            android:background="@drawable/baidu_zoomin_topbtn"
+            android:onClick="onZoomin"
+            android:src="@drawable/baidu_zoomin_btn" />
+
+        <ImageButton
+                  android:id="@+id/outBtn"
+            android:layout_width="45dip"
+            android:layout_height="41dip"
+            android:background="@drawable/baidu_zoomout_bottombtn"
+            android:onClick="onZoomout"
+            android:src="@drawable/baidu_zoomout_btn" />
+    </LinearLayout>
+
+</RelativeLayout>

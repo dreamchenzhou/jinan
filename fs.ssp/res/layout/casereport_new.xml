@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:padding="20dp" 
+    android:scrollbars="none"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layout_report"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_edit_grey_bg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+		<ListView 
+		    android:id="@+id/list_voice"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:divider="@color/white"
+		    android:dividerHeight="4dp"
+		    android:visibility="gone"
+		    />
+        <EditText
+            android:id="@+id/txt_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:focusableInTouchMode="true"
+            android:gravity="top|left"
+            android:hint="@string/report_des_notice"
+            android:minLines="4"
+            android:textColorHint="@color/hint_grey"
+             />
+    </LinearLayout>
+
+    <topevery.um.com.media.RecordVoiceBtnController
+        android:id="@+id/btn_record"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_green_btn_bg"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="@string/record_voice_hint"
+        android:textColor="#ffffff" />
+
+   <!--  <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        > -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="8dip"
+            android:background="@color/transparent"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:background="@color/transparent"
+            />
+    </LinearLayout>
+
+    <topevery.um.com.view.ScrollInnerGridView
+        android:id="@+id/grid_attachview"
+        android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:numColumns="4"
+            android:horizontalSpacing="2dp"
+            android:verticalSpacing="2dp"
+            android:stretchMode="columnWidth"
+        />
+    <topevery.um.com.view.attachview.AttachView
+        android:id="@+id/layout_attach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+   
+<!-- </LinearLayout> -->
+    <include
+        layout="@layout/location_chooes_item"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_report"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_green_btn_bg"
+        android:text="提交"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
+</ScrollView>

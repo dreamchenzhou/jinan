@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/bg_bottom">
+	<ScrollView
+		android:layout_above="@+id/setBottom"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:padding="5dip">
+			<RelativeLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="地址"
+					android:id="@+id/txtAdd"
+					android:layout_alignParentLeft="true"
+					android:layout_centerInParent="true"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="#FFFFFFFF" />
+				<TableLayout
+					android:layout_toRightOf="@+id/txtAdd"
+					android:layout_marginLeft="5dip"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:fadingEdge="@null">
+					<TableRow>
+						<EditText
+							android:id="@+id/txtIP1"
+							android:layout_weight="1"
+							android:maxLength="3"
+							android:background="@drawable/login_txt"
+							android:inputType="number"
+							android:textAppearance="?android:attr/textAppearanceMedium" />
+						<EditText
+							android:id="@+id/txtIP2"
+							android:layout_weight="1"
+							android:maxLength="3"
+							android:background="@drawable/login_txt"
+							android:inputType="number"
+							android:textAppearance="?android:attr/textAppearanceMedium" />
+						<EditText
+							android:id="@+id/txtIP3"
+							android:layout_weight="1"
+							android:maxLength="3"
+							android:background="@drawable/login_txt"
+							android:inputType="number"
+							android:textAppearance="?android:attr/textAppearanceMedium" />
+						<EditText
+							android:id="@+id/txtIP4"
+							android:layout_weight="1"
+							android:maxLength="3"
+							android:background="@drawable/login_txt"
+							android:inputType="number"
+							android:textAppearance="?android:attr/textAppearanceMedium" />
+					</TableRow>
+				</TableLayout>
+			</RelativeLayout>
+			<RelativeLayout
+				android:layout_marginTop="5dip"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="端口"
+					android:id="@+id/txtPortt"
+					android:layout_alignParentLeft="true"
+					android:layout_centerInParent="true"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="#FFFFFFFF" />
+				<EditText
+					android:id="@+id/txtPort"
+					android:layout_toRightOf="@+id/txtPortt"
+					android:layout_marginLeft="5dip"
+					android:background="@drawable/login_txt"
+					android:inputType="number"
+					android:layout_width="120dip"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium" />
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout
+		android:id="@+id/setBottom"
+		android:background="@xml/button"
+		android:layout_alignParentBottom="true"
+		style="@android:style/ButtonBar"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<topevery.um.common.MyButton
+			android:id="@+id/btnSave"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_width="0dip" />
+	</LinearLayout>
+</RelativeLayout>

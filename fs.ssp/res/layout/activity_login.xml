@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="10dp"
+    android:background="@drawable/login_bg"
+    >
+
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:src="@drawable/logo"
+        android:scaleType="center"
+        android:layout_marginBottom="48dp"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:id="@+id/txt_login_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:hint="@string/account"
+        android:textColorHint="@color/hint_grey"
+        android:background="@drawable/login_input"
+        android:drawableLeft="@drawable/icon_user"
+       android:paddingLeft="8dp"
+        android:drawablePadding="8dp"
+        />
+
+    <EditText
+        android:id="@+id/txt_login_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:hint="@string/password"
+        android:background="@drawable/login_input"
+        android:drawableLeft="@drawable/icon_password"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="8dp"
+        android:textColorHint="@color/hint_grey"
+        android:inputType="textPassword"
+        />
+
+    
+    <Button 
+        android:id="@+id/btn_login" 
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:text="@string/login"
+    		android:background="@drawable/selector_green_btn_bg"
+    		android:layout_marginTop="15dp"
+    		android:textColor="@color/white"
+        />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="48dp"
+        >
+        <Button 
+        android:id="@+id/btn_register" 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/new_register"
+    		android:background="@color/transparent"
+    		android:layout_marginTop="15dp"
+    		android:textColor="@color/white"
+        />
+        
+        <Button
+            android:id="@+id/btn_find_pw" 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/find_pw"
+        	android:layout_alignParentRight="true"
+        	android:background="@color/transparent"
+        	android:textColor="@color/white"
+            />
+    </RelativeLayout>
+</LinearLayout>

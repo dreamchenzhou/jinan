@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="20dp"
+    android:background="@color/bg_white"
+    >
+
+    <EditText 
+            android:id="@+id/txt_old_pw"
+            android:layout_width="match_parent"
+        	android:layout_height="48dp"
+        	android:hint="@string/old_pw"
+        	android:layout_marginTop="10dp"
+        	android:background="@drawable/shape_edit_grey_bg"
+        	android:paddingLeft="10dp"
+        	android:textColorHint="@color/hint_grey"
+            />
+    
+    <EditText 
+            android:id="@+id/txt_new_pw"
+            android:layout_width="match_parent"
+        	android:layout_height="48dp"
+        	android:hint="@string/new_pw"
+        	android:layout_marginTop="10dp"
+        	android:background="@drawable/shape_edit_grey_bg"
+        	android:paddingLeft="10dp"
+        	android:textColorHint="@color/hint_grey"
+            />
+    
+    <EditText 
+            android:id="@+id/txt_confirm_pw"
+            android:layout_width="match_parent"
+        	android:layout_height="48dp"
+        	android:hint="@string/confirm_new_pw"
+        	android:layout_marginTop="10dp"
+        	android:background="@drawable/shape_edit_grey_bg"
+        	android:paddingLeft="10dp"
+        	android:textColorHint="@color/hint_grey"
+            />
+    
+    <Button 
+        android:id="@+id/btn_reset_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_pw"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_green_btn_bg"
+        android:textColor="@color/white"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

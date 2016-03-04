@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/index_menu_bg">
+	<LinearLayout
+	    android:id="@+id/mainland_linearLay"
+		android:layout_centerInParent="true"
+		android:gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TextView
+		    android:id="@+id/textView"
+			android:layout_width="364px"
+			android:layout_height="143px"
+			android:background="@drawable/mainland" />
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_marginTop="20dip"
+	    android:layout_below="@+id/mainland_linearLay"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+	<Button
+		    android:id="@+id/mainland_button1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@xml/mainland_button1"
+		    android:text="进入随手拍"
+		    android:textColor="#FFFFFF"/>
+		<Button
+		    android:id="@+id/mainland_button2"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@xml/mainland_button1"
+		    android:text="立即去拍照"
+		    android:textColor="#FFFFFF"/>
+		</LinearLayout>
+</RelativeLayout>

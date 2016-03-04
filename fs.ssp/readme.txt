@@ -1,0 +1,1 @@
+济南采用soap1.2通讯协议，替换原来的udp2进制通讯，所有通讯实体类放在topevery/um/net/newbean文件下

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/index_menu_bg">
+    <ListView
+        android:id="@+id/attachinfo_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/linearlayout3"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearlayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="80dip"
+            android:layout_height="35dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="2dip"
+            android:layout_weight="1"
+            android:background="@xml/button"
+            android:gravity="center"
+            android:text="确  定"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="80dip"
+            android:layout_height="35dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_weight="1"
+            android:background="@xml/button"
+            android:gravity="center"
+            android:text="照  相"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="80dip"
+            android:layout_height="35dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@xml/button"
+            android:gravity="center"
+            android:text="添  加"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>

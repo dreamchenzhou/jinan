@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/index_menu_bg">
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_above="@+id/linearlayout5"
+		android:layout_alignParentTop="true">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/codeshow_linearlayout2"
+				android:layout_width="fill_parent"
+				android:visibility="invisible"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dip"
+				android:paddingLeft="10dip"
+				android:paddingRight="10dip"
+				android:orientation="vertical">
+				<topevery.um.com.casereport.uritl.MyListView
+					android:id="@+id/list_codeshow"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/login_txt"
+					android:listSelector="#00000000"
+					android:divider="#2894FF"
+					android:dividerHeight="1dip"
+					/>
+			</LinearLayout>
+			<topevery.um.com.casereport.uritl.MyGridView
+				android:id="@+id/grid_codeshow"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:listSelector="#00000000"
+				android:numColumns="2"
+				android:padding="10dip" />
+			<LinearLayout
+				android:id="@+id/codeshow_linearlayout"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingBottom="2dip"
+				android:paddingLeft="10dip"
+				android:paddingRight="10dip"
+				android:visibility="invisible">
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/login_txt"
+					android:gravity="center"
+					android:text="办  理  流  程"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<HorizontalScrollView
+				android:id="@+id/codeshow_horizontalscrollview"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="12dip"
+				android:layout_marginRight="12dip"
+				android:visibility="invisible">
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<TableLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<TableRow android:background="#FFFFFF">
+							<TextView
+								android:layout_width="100dip"
+								android:layout_height="wrap_content"
+								android:layout_margin="1dip"
+								android:background="#2894FF"
+								android:gravity="center"
+								android:text=" 环 节 名 "
+								android:textAppearance="?android:attr/textAppearanceMedium" />
+							<TextView
+								android:layout_width="100dip"
+								android:layout_height="wrap_content"
+								android:layout_marginBottom="1dip"
+								android:layout_marginTop="1dip"
+								android:background="#2894FF"
+								android:gravity="center"
+								android:text=" 经办单位 "
+								android:textAppearance="?android:attr/textAppearanceMedium" />
+							<TextView
+								android:layout_width="100dip"
+								android:layout_height="wrap_content"
+								android:layout_margin="1dip"
+								android:background="#2894FF"
+								android:gravity="center"
+								android:text=" 来件时间 "
+								android:textAppearance="?android:attr/textAppearanceMedium" />
+							<TextView
+								android:layout_width="100dip"
+								android:layout_height="wrap_content"
+								android:layout_marginBottom="1dip"
+								android:layout_marginTop="1dip"
+								android:background="#2894FF"
+								android:gravity="center"
+								android:text=" 办结时间 "
+								android:textAppearance="?android:attr/textAppearanceMedium" />
+							<TextView
+								android:layout_width="100dip"
+								android:layout_height="wrap_content"
+								android:layout_margin="1dip"
+								android:background="#2894FF"
+								android:gravity="center"
+								android:text=" 环节用时 "
+								android:textAppearance="?android:attr/textAppearanceMedium" />
+							<TextView
+								android:layout_width="100dip"
+								android:layout_height="wrap_content"
+								android:layout_marginBottom="1dip"
+								android:layout_marginTop="1dip"
+								android:background="#2894FF"
+								android:gravity="center"
+								android:text=" 办理时限 "
+								android:textAppearance="?android:attr/textAppearanceMedium" />
+							<TextView
+								android:layout_width="100dip"
+								android:layout_height="wrap_content"
+								android:layout_margin="1dip"
+								android:background="#2894FF"
+								android:gravity="center"
+								android:text=" 累计用时 "
+								android:textAppearance="?android:attr/textAppearanceMedium" />
+							<TextView
+								android:layout_width="150dip"
+								android:layout_height="wrap_content"
+								android:layout_marginBottom="1dip"
+								android:layout_marginRight="1dip"
+								android:layout_marginTop="1dip"
+								android:background="#2894FF"
+								android:gravity="center"
+								android:text=" 处理意见 "
+								android:textAppearance="?android:attr/textAppearanceMedium" />
+						</TableRow>
+					</TableLayout>
+					<topevery.um.com.casereport.uritl.MyListView
+						android:id="@+id/list2_codeshow"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="15dip"
+						android:background="#FFFFFF"
+						android:cacheColorHint="#00000000"
+						android:divider="#FFCC00" />
+				</LinearLayout>
+			</HorizontalScrollView>
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout
+		android:id="@+id/linearlayout5"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:gravity="center"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btn_return"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@xml/button_sure"
+			android:paddingLeft="25dip"
+			android:text="确  定"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#FFFFFF" />
+	</LinearLayout>
+</RelativeLayout>

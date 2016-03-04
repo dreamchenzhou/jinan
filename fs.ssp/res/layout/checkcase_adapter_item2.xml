@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+		<TableRow>
+			<TextView
+				android:id="@+id/txt_activityName"
+				android:layout_width="100dip"
+				android:maxWidth="100dip"
+				android:layout_height="fill_parent"
+				android:textColor="#8E8E8E"
+				android:background="#ACD6FF"
+				android:layout_marginRight="1dip"
+				android:layout_marginLeft="1dip"
+				android:layout_marginBottom="1dip"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+				android:id="@+id/txt_operatorName"
+				android:layout_width="100dip"
+				android:maxWidth="100dip"
+				android:layout_height="fill_parent"
+				android:textColor="#8E8E8E"
+				android:background="#ACD6FF"
+				android:layout_marginRight="1dip"
+				android:layout_marginBottom="1dip"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+				android:id="@+id/txt_inDate"
+				android:layout_width="100dip"
+				android:maxWidth="100dip"
+				android:layout_height="fill_parent"
+				android:textColor="#8E8E8E"
+				android:background="#ACD6FF"
+				android:layout_marginRight="1dip"
+				android:layout_marginBottom="1dip"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+				android:id="@+id/txt_finishedDate"
+				android:layout_width="100dip"
+				android:maxWidth="100dip"
+				android:layout_height="fill_parent"
+				android:textColor="#8E8E8E"
+				android:background="#ACD6FF"
+				android:layout_marginRight="1dip"
+				android:layout_marginBottom="1dip"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+				android:id="@+id/txt_actUsedTime"
+				android:layout_width="100dip"
+				android:maxWidth="100dip"
+				android:layout_height="fill_parent"
+				android:textColor="#8E8E8E"
+				android:background="#ACD6FF"
+				android:layout_marginRight="1dip"
+				android:layout_marginBottom="1dip"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+				android:id="@+id/txt_limitTime"
+				android:layout_width="100dip"
+				android:maxWidth="100dip"
+				android:layout_height="fill_parent"
+				android:textColor="#8E8E8E"
+				android:background="#ACD6FF"
+				android:layout_marginRight="1dip"
+				android:layout_marginBottom="1dip"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+				android:id="@+id/txt_caseUsedDate"
+				android:layout_width="100dip"
+				android:maxWidth="100dip"
+				android:layout_height="fill_parent"
+				android:textColor="#8E8E8E"
+				android:background="#ACD6FF"
+				android:layout_marginRight="1dip"
+				android:layout_marginBottom="1dip"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+				android:id="@+id/txt_opinion"
+				android:layout_width="150dip"
+				android:maxWidth="150dip"
+				android:layout_height="fill_parent"
+				android:textColor="#8E8E8E"
+				android:background="#ACD6FF"
+				android:layout_marginRight="1dip"
+				android:layout_marginBottom="1dip"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>
